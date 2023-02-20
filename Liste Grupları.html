@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row row-cols-3 gy-5">
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item disabled" aria-disabled="true">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item active" aria-current="true">Bootstrap</li>
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item">Node JS</li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="list-group">
+                    <a href="#" class="list-group-item link-group-item-active">C</a>
+                    <a href="#" class="list-group-item link-group-item-active active" aria-current="true">C++</a>
+                    <a href="#" class="list-group-item link-group-item-active">C#</a>
+                    <a href="#" class="list-group-item link-group-item-active disabled">Python</a>
+                    <a href="#" class="list-group-item link-group-item-active">Angular</a>
+                    <a href="#" class="list-group-item link-group-item-active">React JS</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="list-group">
+                    <button type="button" class="list-group-item link-group-item-active active" aria-current="true">C</button>
+                    <button type="button" class="list-group-item link-group-item-active">C++</button>
+                    <button type="button" class="list-group-item link-group-item-active">C#</button>
+                    <button type="button" class="list-group-item link-group-item-active">Python</button>
+                    <button type="button" class="list-group-item link-group-item-active">Angular</button>
+                    <button type="button" class="list-group-item link-group-item-active" disabled>React JS</button>
+                </div>
+            </div>
+            <div class="col">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item active">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item" aria-current="true">Bootstrap</li>
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item disabled" aria-disabled="true">Node JS</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-group list-group-horizontal-xxl">
+                    <li class="list-group-item active">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item" aria-current="true">Bootstrap</li>
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item disabled" aria-disabled="true">Node JS</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item active">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item" aria-current="true">Bootstrap</li>
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item disabled" aria-disabled="true">Node JS</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info">C</li>
+                    <li class="list-group-item list-group-item-success">C++</li>
+                    <li class="list-group-item list-group-item-dark">C#</li>
+                    <li class="list-group-item list-group-item-warning">Python</li>
+                    <li class="list-group-item list-group-item-danger">Angular</li>
+                    <li class="list-group-item list-group-item-secondary">React JS</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Listelerle Tab Panel Yapımı -->
+        <div class="row row-cols-2">
+            <div class="col">
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-center align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Backend</div>
+                            Php, Asp, NodeJs, Python
+                        </div>
+                        <span class="badge bg-danger rounded-pill">12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-center align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Frontend</div>
+                            Php, Asp, NodeJs, Python
+                        </div>
+                        <span class="badge bg-danger rounded-pill">17</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-center align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Deneme</div>
+                            Php, Asp, NodeJs, Python
+                        </div>
+                        <span class="badge bg-danger rounded-pill">9</span>
+                    </li>
+                </ol>
+            </div>
+            <div class="col">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List Group Başlıkları</h5>
+                            <small>1 gün önce</small>
+                        </div>
+                        <p class="mb-1">İçerik için bir paragraf.</p>
+                        <small>Küçük detaylar için.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 text-danger">List Group Başlıkları</h5>
+                            <small class="text-muted">3 gün önce</small>
+                        </div>
+                        <p class="mb-1">İçerik için bir paragraf.</p>
+                        <small class="text-muted">Küçük detaylar için.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 text-danger">List Group Başlıkları</h5>
+                            <small class="text-muted">7 gün önce</small>
+                        </div>
+                        <p class="mb-1">İçerik için bir paragraf.</p>
+                        <small class="text-muted">Küçük detaylar için.</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap ile Yazılınca -->
+        <div class="row row-cols-2">
+            <div class="col">
+                <div role="tabpanel">
+                    <div class="list-group" id="myTabList" role="tablist">
+                        <a href="#home" class="list-group-item list-group-item-action active" data-bs-toggle="list">
+                            Anasayfa</a>
+                        <a href="#profile" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                            Profil</a>
+                        <a href="#message" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                            Mesajlar</a>
+                        <a href="#setting" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                            Ayarlar</a>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home" role="tabpanel"><strong>Anasayfa</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptatum consequuntur, fugit laboriosam sint similique deleniti iusto minima temporibus eos voluptas vero nam nesciunt, incidunt culpa? Neque modi odio voluptatibus.
+                        Sed tempora, ipsam, magni incidunt quos soluta non dolores accusantium illo eligendi pariatur deleniti quis. Doloribus veniam deleniti soluta quisquam labore ad reiciendis laboriosam quos nesciunt, numquam, ea obcaecati ipsum?</div>
+                        <div class="tab-pane" id="profile" role="tabpanel"><strong>Profil</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptatum consequuntur, fugit laboriosam sint similique deleniti iusto minima temporibus eos voluptas vero nam nesciunt, incidunt culpa? Neque modi odio voluptatibus.
+                        Sed tempora, ipsam, magni incidunt quos soluta non dolores accusantium illo eligendi pariatur deleniti quis. Doloribus veniam deleniti soluta quisquam labore ad reiciendis laboriosam quos nesciunt, numquam, ea obcaecati ipsum?</div>
+                        <div class="tab-pane" id="message" role="tabpanel"><strong>Mesajlar</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptatum consequuntur, fugit laboriosam sint similique deleniti iusto minima temporibus eos voluptas vero nam nesciunt, incidunt culpa? Neque modi odio voluptatibus.
+                        Sed tempora, ipsam, magni incidunt quos soluta non dolores accusantium illo eligendi pariatur deleniti quis. Doloribus veniam deleniti soluta quisquam labore ad reiciendis laboriosam quos nesciunt, numquam, ea obcaecati ipsum?</div>
+                        <div class="tab-pane" id="setting" role="tabpanel"><strong>Ayarlar</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptatum consequuntur, fugit laboriosam sint similique deleniti iusto minima temporibus eos voluptas vero nam nesciunt, incidunt culpa? Neque modi odio voluptatibus.
+                        Sed tempora, ipsam, magni incidunt quos soluta non dolores accusantium illo eligendi pariatur deleniti quis. Doloribus veniam deleniti soluta quisquam labore ad reiciendis laboriosam quos nesciunt, numquam, ea obcaecati ipsum?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap ile Yazılınca 2 -->
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="myTabList2" role="tablist">
+                    <a href="#list-home" class="list-group-item list-group-item-action active" data-bs-toggle="list" id="home" role="tab" aria-controls="list-home">Anasayfa</a>                    
+                    <a href="#list-profile" class="list-group-item list-group-item-action" data-bs-toggle="list" id="profile" role="tab" aria-controls="list-profile">Profil</a>                    
+                    <a href="#list-messages" class="list-group-item list-group-item-action" data-bs-toggle="list" id="messages" role="tab" aria-controls="list-messages">Mesajlar</a>
+                    <a href="#list-settings" class="list-group-item list-group-item-action" data-bs-toggle="list" id="settings" role="tab" aria-controls="list-settings">Ayarlar</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="home">
+                        <strong>Anasayfa</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                    <div class="tab-pane fade show" id="list-profile" role="tabpanel" aria-labelledby="profile">
+                        <strong>Profil</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                    <div class="tab-pane fade show" id="list-messages" role="tabpanel" aria-labelledby="messages">
+                        <strong>Mesajlar</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                    <div class="tab-pane fade show" id="list-settings" role="tabpanel" aria-labelledby="settings">
+                        <strong>Ayarlar</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- JavaScript ile Yazılınca -->
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="myTabList3" role="tablist">
+                    <a href="#list-home" class="list-group-item list-group-item-action active" id="home" role="tab" aria-controls="list-home">Anasayfa</a>                    
+                    <a href="#list-profile" class="list-group-item list-group-item-action" id="profile" role="tab" aria-controls="list-profile">Profil</a>                    
+                    <a href="#list-messages" class="list-group-item list-group-item-action" id="messages" role="tab" aria-controls="list-messages">Mesajlar</a>
+                    <a href="#list-settings" class="list-group-item list-group-item-action" id="settings" role="tab" aria-controls="list-settings">Ayarlar</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="home">
+                        <strong>Anasayfa</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                    <div class="tab-pane fade show" id="list-profile" role="tabpanel" aria-labelledby="profile">
+                        <strong>Profil</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                    <div class="tab-pane fade show" id="list-messages" role="tabpanel" aria-labelledby="messages">
+                        <strong>Mesajlar</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                    <div class="tab-pane fade show" id="list-settings" role="tabpanel" aria-labelledby="settings">
+                        <strong>Ayarlar</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt illum non quidem corrupti, veniam eligendi enim consequatur autem quod quam illo nemo error, labore quisquam culpa dolore ipsum ratione.
+                        Nam minus corrupti magni minima sint, veniam eum dolorum nulla ab eius, veritatis porro. Sed ut, natus quisquam tempora dolore magni quas! Sequi, ullam neque. Dolorum ipsa quod deserunt. Quae!
+                        Quisquam, dolorem repudiandae beatae ut odio nobis similique accusamus ullam quis optio porro a nemo. Maxime repellendus veritatis, sint asperiores perferendis id natus facilis repudiandae a nihil nemo porro sapiente.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>   
+    <script>
+        var tabList=[].slice.call(document.querySelectorAll("#myTabList3 a"));
+        tabList.forEach(function(x) {
+            var myTab=new bootstrap.Tab(x);
+            x.addEventListener("click",function(e){
+                e.preventDefault();
+                myTab.show();
+            });
+        });
+    </script> 
+</body>
+</html>

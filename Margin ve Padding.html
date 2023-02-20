@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-2 p-3 bg-warning">
+        <!-- Padding nesnelere iç dolgu vermeye yarar. pt, pe, pb, ps, px ve py spesifik olarak dolguyu vermek istediğimiz kısımları belirtir. -->
+        <!-- Margin nesnelerin birbirine karşı olan boşluklarını belirlemede kullanılır. mt, me, mb, ms, mx ve my -->
+        <div class="d-inline border border-4 border-primary" style="width: 6.25rem; height:6.25rem;">1. Kutu</div>
+        <div class="d-inline border border-4 border-primary p-2" style="width: 6.25rem; height:6.25rem;">2. Kutu</div>
+        <div class="d-inline border border-4 border-primary" style="width: 6.25rem; height:6.25rem;">3. Kutu</div>
+        <br>
+        <br>
+        <br>
+        <div class="border border-4 border-primary" style="width: 6.25rem; height:6.25rem;">1. Kutu</div>
+        <div class="border border-4 border-primary mx-lg-auto my-1" style="width: 6.25rem; height:6.25rem;">2. Kutu</div>
+        <div class="border border-4 border-primary p-1 py-lg-5" style="width: 6.25rem; height:6.25rem;">3. Kutu</div>
+        <br>
+        <br>
+        <!-- D-none içeriklerin gizlenmesi sağlanır -->
+        <br>
+        <div class="d-none d-sm-block d-xxl-none">Small ve Extra large arasında görünür olur.</div>
+        <div class="d-block d-sm-none d-xxl-block">Small ve Extra large arasında gizli olur.</div>
+        <div class="d-block d-print-none">Yazdırılırken gizli olur.</div>
+        <div class="d-none d-print-block">Yazdırılırken görünür olur.</div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

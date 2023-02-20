@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Çıkış Yap</button>
+
+                <div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="ExitLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <!-- Modal açıldığında herhangi bir noktaya basıldığında modalın kapanması istenmiyorsa data-bs-backdrop yazılır. Esc ile de kapatılması istenmiyor ise data-bs-keyboard eklenir. -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ExitLabel">İşlem Bilgisi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Çıkış Yapmak İstediğinize Emin Misiniz?</p>
+                                <p>
+                                    <button type="button" class="btn btn-warning" title="popover" data-bs-toggle="popover" data-bs-content="Burada popover içeriği olacak">Tıkla</button>
+                                </p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi possimus aspernatur voluptates cupiditate perspiciatis. Culpa numquam voluptatum, necessitatibus modi, excepturi, iusto perspiciatis architecto obcaecati explicabo recusandae tempora maiores aliquid in.
+                                Perspiciatis rerum amet nulla, obcaecati atque sapiente, optio neque harum saepe consectetur dolorum similique autem. Porro, magni. Optio alias quisquam impedit aliquid excepturi, incidunt voluptatem minima sunt reprehenderit iusto a.
+                                Incidunt consectetur, quis ab mollitia magnam, voluptas repellat, eligendi quaerat quae ea perspiciatis accusantium reprehenderit asperiores facilis dolor quas expedita quo vero! Saepe voluptates ducimus velit deserunt quaerat corporis obcaecati.
+                                Dolorem officiis quod sed molestiae, neque quo velit soluta nostrum nihil, corporis doloribus. Doloremque ipsum nihil consequatur voluptatibus qui excepturi dolores vel, harum fugit cum, dolorum ipsa soluta sint ut.
+                                Quis autem, minus doloremque quae tempore facilis laudantium quia iusto optio voluptatem incidunt accusamus modi ea deserunt cupiditate suscipit dolorum alias fugit officia quo cumque rerum ratione quidem quos. Expedita.
+                                Facilis nam nulla, necessitatibus aliquam dolorem, id odit minima placeat, tempora ex dolores? Commodi magnam optio suscipit fuga. Error doloremque voluptate officia ipsum fuga architecto harum minus praesentium, molestiae enim.
+                                Sint laudantium alias exercitationem repellat accusantium, officiis numquam animi quaerat sed, dolore consequatur fugit, labore debitis! Dolore eveniet placeat modi. Harum totam aliquid ipsa non at reprehenderit debitis quisquam necessitatibus?
+                                Ad, officia doloremque libero possimus ab ipsa molestias molestiae beatae. Unde mollitia molestias quas ipsum! Et eum, itaque ab, enim totam repudiandae, sit quod odio voluptatibus expedita assumenda dolorem impedit.
+                                Nobis provident inventore magnam eaque corporis! Voluptate quibusdam sed impedit necessitatibus consectetur eaque laboriosam qui eum, est voluptatum ratione, ipsa odit. Adipisci in quam quos magni nisi beatae numquam velit.
+                                Rem et rerum similique aspernatur iure ratione quod sed aut eveniet, consequuntur, atque, facere delectus asperiores tenetur voluptatibus voluptates fuga incidunt recusandae dolor cupiditate adipisci ducimus quidem quibusdam earum? Magni.</p>
+                                <p><a href="#" role="button" data-bs-toggle="tooltip" title="Bu mu tooltip" class="btn btn-success">Tıkla Bakalım</a></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                                <button type="button" class="btn btn-danger">Onayla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+    </div>  <!-- container end -->
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+    <script>
+        // let myModal = new bootstrap.Modal(document.querySelector("#myModal"));
+        // myModal.show(); Çıkış Yap Butonun eklenmeden JS ile bu şekilde tetiklenir.
+        let myElement = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var myList = myElement.map(function (x){
+            return new bootstrap.Popover(x);
+        });
+        let myElement1 = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var myList1 = myElement1.map(function (y){
+            return new bootstrap.Tooltip(y);
+        });
+    </script>
+</body>
+</html>

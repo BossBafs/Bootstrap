@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col mt-5">
+                <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="M.Ali">Yukarı Tooltip</button>
+                    <!-- Ekran Okuyucu -->
+                    <!-- <div class="tooltip bs-tooltip-top" role="tooltip">
+                        <div class="tooltip-arrow"></div>
+                        <div class="tooltip-inner">M.Ali</div>
+                    </div> -->
+                <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" title="M.Ali">Yukarı Tooltip</button>                
+                <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="M.Ali">Yukarı Tooltip</button>                
+                <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="left" title="M.Ali">Yukarı Tooltip</button>
+                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="<strong>M.Ali</strong> <u>İle</u> <em>Bootstrap</em>">Html ile Tooltip</button>
+                <span class="d-inline-block bg-dark" tabindex="0" data-bs-toggle="tooltip" title="tıklanamaz">
+                    <button type="button" class="btn btn-primary" disabled>Pasif Buton</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script>
+        var toolList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList=toolList.map(function(x){
+            return new bootstrap.Tooltip(x,{
+                // <!-- İpucunun ekranda gösterilme ve gecikme sürelerini belirtir. Salise cinsindendir. -->
+                delay:{"show":1000,"hide":2000},
+                // <!-- data-bs-html yapmadan da buraya html:true/false yazabiliriz. -->
+                // <!-- Hizalamaları hepsini tep komutla burada yapabiliriz. placement:top/right/bottom/left -->
+                // <!-- Title'si olmayan için buradan Title atanabilir. -->
+                // <!-- Trigger ipucunun ekranda nasıl bir eylemden sonra açılması gerektiğini atar. Focus, tab tuşu ile gezinirken aktifleşir. Hover, mouuse ile butonun üzerine gidildiğinde aktifleşir. Click ise tıklanıldığında aktifleşir. -->
+                // <!-- offset ise ipucunun ötelenmesini sağlar. -->
+                offset:[0,25]
+            });
+        })
+    </script>    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- hx ve display-x farkı -->
+        <h1>Başlık Farkları</h1>
+        <h1 class="display-1">Başlık Farkları</h1>
+
+        <!-- içerik small kullanımı -->
+        <p class="h4">Yazılım Dünyasının <small>Geleceği</small> Yeni</p>
+        <!-- içerik mark kullanımı -->
+        <p>Buradaki <mark>Mark</mark> Etiketine Dikkat Et</p>
+        <!-- abbr kullanımı kısaltanın fare ile üzerine gelindiğinde yazılan içerik gösterilir. initialism ise kısaltılan kelimeyi daha küçük yazar. -->
+        <p><abbr title="Dünya Sağlık Örgütü">WHO</abbr>'nun merkezi Cenevre'dir. </p>
+        <p><abbr title="Dünya Sağlık Örgütü" class="initialism">WHO</abbr>'nun merkezi Cenevre'dir. </p>
+        <!-- blockquote ve blockquote-footer alıntı ve alıntının kime ait olduğunu belirtmede kullanılır. -->
+        <blockquote class="blockquote">
+            <p>Algoritma bilincini geliştirmeden yazılım dünyasına adım atarsan eksik kalırsın.</p>
+            <footer class="blockquote-footer">Fehmi UYAR</footer>
+        </blockquote>
+        <!-- code kullanımı -->
+        <p>HTML Etiketleri: <code>span</code> ve <code>div</code> en çok kullandığımız elementlerdir.</p>
+        <!-- kbd kullanımı -->
+        <p>Yazdır İletişim kutusunu açmak için <kbd>ctrl+p</kbd> tuşlarına basın.</p>
+        <!-- pre font ve line-height kullanımı olarak metinden farklıdır. -->
+        <pre>
+            Pre elementinde metin görünümü font ve line-height olarak güzeldir.
+            Yazılan tüm komutlar bootstrap ve HTML 5'de görünüm olarak farklıdır.
+        </pre>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

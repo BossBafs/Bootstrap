@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button class="btn btn-dark" type="button" id="btnToast">Kaydet</button>
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+    </div>  <!-- container end -->
+<div class="toast position-fixed top-0 start-50 translate-middle-x m-5 pb-2 bg-primary text-white border-0" role="alert" id="myToast" aria-live="assertive" aria-atomic="true" style="z-index: 11;" data-bs-animation="false" data-bs-delay="500">
+    <!-- Uyarının otomatik olarak kapanmasını engellemek için data-bs-autohide="false" yazılır. Delay süreyi ayarlamak için kullanılır. Default olan 5 sn'dir.-->
+        <div class="d-flex align-items-center">
+            <div class="toast-body">
+                Email Adresi Hatalı
+            </div>
+            <button class="btn-close btn-close-white m-auto me-2" type="button" data-bs-dismiss="toast" aria-label="kapat"></button>
+        </div>
+
+</div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>   
+    <script>
+
+        var tTrigger = document.getElementById("btnToast");
+        var myToast = document.getElementById("myToast");
+        tTrigger.addEventListener('click', function () {
+            var toast = new bootstrap.Toast(myToast);
+            toast.show();
+        });
+    </script> 
+</body>
+</html>

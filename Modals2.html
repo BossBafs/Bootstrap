@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Çıkış Yap</button>
+
+                <div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="ExitLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-xl-down">
+                        <!-- Modal açıldığında herhangi bir noktaya basıldığında modalın kapanması istenmiyorsa data-bs-backdrop yazılır. Esc ile de kapatılması istenmiyor ise data-bs-keyboard eklenir. -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ExitLabel">İşlem Bilgisi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                            </div>
+                            <div class="modal-body px-4">
+                                <div class="row">
+                                    <div class="col-md-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    <div class="col-md-8 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-7 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    <div class="col-md-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                </div>
+                                <div class="row">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="namelastname" class="col-form-label">Adı Soyadı</label>
+                                            <input type="text" class="form-control" id="namelastname">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="col-form-label">Mesajınız</label>
+                                            <input type="text" class="form-control" id="message">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#myModal1">İkinci Modal</button>
+                                
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                                <button type="button" class="btn btn-danger">Onayla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" tabindex="-1" id="myModal1" aria-labelledby="ExitLabel1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ExitLabel1">İkinci İşlem</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/CB0R3-tTihI?list=PLY20HpFruiK13LB2jTkET4DkJP9eD2HZf" title="Ders 45 Bootstrap 5 Modal Bölüm 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Geri Dön</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+    </div>  <!-- container end -->
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+    <script>
+        // let myModal = new bootstrap.Modal(document.querySelector("#myModal"));
+        // myModal.show(); Çıkış Yap Butonun eklenmeden JS ile bu şekilde tetiklenir.
+        let myModal1 = new bootstrap.Modal(document.querySelector("#myModal1"), {
+            keyboard: false,
+            backdrop: 'static'
+        });
+        myModal.show();
+        let myElement = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var myList = myElement.map(function (x){
+            return new bootstrap.Popover(x);
+        });
+        let myElement1 = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var myList1 = myElement1.map(function (y){
+            return new bootstrap.Tooltip(y);
+        });
+    </script>
+</body>
+</html>

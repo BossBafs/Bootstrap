@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn-close" aria-label="kapat"></button>
+                <button type="button" class="btn-close" aria-label="kapat" disabled></button>
+            </div>  <!-- col end -->
+            <div class="col bg-dark py-4">
+                <button type="button" class="btn-close btn-close-white" aria-label="kapat"></button>
+                <button type="button" class="btn-close btn-close-white" aria-label="kapat" disabled></button>
+            </div>  <!-- col end -->
+            <br>
+            <br>
+            <p></p>
+            <br>
+            <br>
+            <div class="col">
+                <a href="#open" class="btn btn-danger" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="open">Link</a>
+                <button class="btn btn-dark" data-bs-target="#open" data-bs-toggle="collapse" aria-expanded="false" aria-controls="open">Button</button>
+
+                <!-- Pencerenin yatay açılması istenirse collapse-horizontal kullanılır. Style ile genişlik tanımlanır, mobil için genişlik 350px olmalı ki scroll çubuğu çıkmasın. -->
+                <div class="collapse collapse-horizontal mt-4" id="open">
+                    <div class="card border-info border-2" style="width: 700px;">
+                        <div class="card-body">
+                            <h4 class="card-title text-muted">Burası Açılabilir İçerik</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit sit, excepturi quis expedita ut aspernatur inventore enim nobis tempora qui quisquam, fuga consequatur dignissimos! Natus vel maiores fugit asperiores!
+                            Explicabo labore voluptas incidunt dicta. Sequi ipsum nisi magni laudantium nobis qui porro reprehenderit animi quam dolor cupiditate, commodi consectetur non quis maxime quod consequuntur odit iure architecto ullam. Itaque?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+        <br>
+        <br>
+        <p></p>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success" data-bs-target=".multi-collapse" data-bs-toggle="collapse" aria-expanded="false" aria-controls="open1 open2">Açılır Buton</button>
+
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse mt-4" id="open1">
+                    <div class="card border-info border-2">
+                        <div class="card-body">
+                            <h4 class="card-title text-muted">Burası Açılabilir İçerik</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit sit, excepturi quis expedita ut aspernatur inventore enim nobis tempora qui quisquam, fuga consequatur dignissimos! Natus vel maiores fugit asperiores!
+                            Explicabo labore voluptas incidunt dicta. Sequi ipsum nisi magni laudantium nobis qui porro reprehenderit animi quam dolor cupiditate, commodi consectetur non quis maxime quod consequuntur odit iure architecto ullam. Itaque?</p>
+                        </div>
+                    </div>
+                </div>  <!-- collapse div end -->
+
+            </div>  <!-- col end -->
+            <div class="col">
+                <div class="collapse multi-collapse mt-4" id="open2">
+                    <div class="card border-warning border-2">
+                        <img src="RESİMLER/istockphoto-1362094093-1024x1024.jpg" class="img-fluid card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-muted">Burası Bir Diğer Açılabilir İçerik</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit sit, excepturi quis expedita ut aspernatur inventore enim nobis tempora qui quisquam, fuga consequatur dignissimos! Natus vel maiores fugit asperiores!
+                            Explicabo labore voluptas incidunt dicta. Sequi ipsum nisi magni laudantium nobis qui porro reprehenderit animi quam dolor cupiditate, commodi consectetur non quis maxime quod consequuntur odit iure architecto ullam. Itaque?</p>
+                        </div>
+                    </div>
+                </div>  <!-- collapse div end -->
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+
+    </div>  <!-- container end -->
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

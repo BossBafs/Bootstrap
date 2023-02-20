@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dikeyhizalama.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <!-- <div class="col">
+                <div class="carousel slide" id="mySlide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" aria-current="true" aria-label="İkinci Slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" aria-current="true" aria-label="Üçüncü Slayt"></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="3" aria-current="true" aria-label="Dördüncü Slayt"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="RESİMLER/istockphoto-1362094093-1024x1024.jpg" alt="slide 1" class="d-block w-100" witdh="720" height="600">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>İlk Slayt Etiketi</h5>
+                                <p>Resim Metini</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="RESİMLER/istockphoto-827592510-1024x1024.jpg" alt="slide 2" class="d-block w-100" witdh="720" height="600">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="RESİMLER/maxresdefault.jpg" alt="slide 3" class="d-block w-100" witdh="720" height="600">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="RESİMLER/Smile.jpg" alt="slide 4" class="d-block w-100" witdh="720" height="600">
+                            <div class="carousel-caption d-none d-md-block text-danger">
+                                <h5>Üçüncü Slayt Etiketi</h5>
+                                <p>Resim Metini</p>
+                            </div>
+                        </div>
+                    </div>  carousel inner end
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mySlide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mySlide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+                </div>  carousel end
+            </div>  col end -->
+            <div class="col">
+                <!-- carousel-fade farklı geçiş efekti, data-bs-interval ise süreyi ayarlar salise cinsinden. Otomatik ekran geçişinin kaldırılması için yalnızca geçiş ikonlarının veya alt slide ların kullanılması istenirse data-bs-ride kaldırılır, data-bs-touch="false"eklenir. Süreyi kalrırmak için ise data-bs-interval="false" eklenir. Koyu tema için ise carousel-dark eklenir. -->
+                <div class="carousel slide carousel-fade carousel-dark position-relative" id="mySlide1" data-bs-ride="carousel">
+                    <div class="position-absolute bottom-0 start-0 my-slide1 card mb-4 ms-4 text-white d-none d-lg-block">
+                        <div class="card-body">
+                            <h3>Ayrıcalıkları Keşfet</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum nam accusantium dolores pariatur eveniet.</p>
+                            <div class="text-end"><a href="#" class="btn btn-danger">Bize Katıl</a></div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#mySlide1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="İlk Slayt"></button>
+                        <button type="button" data-bs-target="#mySlide1" data-bs-slide-to="1" aria-current="true" aria-label="İkinci Slayt"></button>
+                        <button type="button" data-bs-target="#mySlide1" data-bs-slide-to="2" aria-current="true" aria-label="Üçüncü Slayt"></button>
+                        <button type="button" data-bs-target="#mySlide1" data-bs-slide-to="3" aria-current="true" aria-label="Dördüncü Slayt"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="RESİMLER/istockphoto-1362094093-1024x1024.jpg" alt="slide 1" class="d-block w-100" witdh="720" height="600">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="RESİMLER/istockphoto-827592510-1024x1024.jpg" alt="slide 2" class="d-block w-100" witdh="720" height="600">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="RESİMLER/maxresdefault.jpg" alt="slide 3" class="d-block w-100" witdh="720" height="600">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="RESİMLER/Smile.jpg" alt="slide 4" class="d-block w-100" witdh="720" height="600">
+                            <div class="carousel-caption d-none d-md-block text-danger">
+                            </div>
+                        </div>
+                    </div>  <!-- carousel inner end -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mySlide1" data-bs-slide="prev">
+                        <span class="bi bi-arrow-left-circle-fill fs-1" aria-hidden="true"></span>
+                        <span class="visually-hidden">Önceki</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mySlide1" data-bs-slide="next">
+                        <span class="bi bi-arrow-right-square-fill fs-1" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sonraki</span>
+                    </button>
+                </div>  <!-- carousel end -->
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+    </div>  <!-- container end -->
+    <script src="JS/bootstrap.bundle.min.js"></script>   
+    <script>
+        // Süreyi JavaScript ile bu şekilde ayarlayabiliriz.
+    //     var myCaro = document.querySelector("#mySlide1");
+    //     var caro = new bootstrap.Carousel(myCaro, {
+    //         interval: 2000
+    //     })
+    // </script> 
+</body>
+</html>

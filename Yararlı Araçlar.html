@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-2 p-3">
+        <!-- Float hizalama imkanı sonar. Clearfix ile düzenlenmesi sağlanır. -->
+        <div class="clearfix mb-5">
+            <span class="float-start bg-dark text-white p-2">Sol Fload</span>
+            <span class="float-end bg-danger text-white p-2">Sağ Fload</span>
+        </div>
+            <span class="float-none bg-danger text-white p-2">Floadsız</span>
+            <br>
+            <br>
+        <!-- User-select metinlerin seçilme özelliklerini belirtir. -->
+        <div class="row">
+            <div class="col-md-6">
+                <p class="user-select-all">Kullanıcı tıkladığında tüm metin seçilir.</p>
+                <p class="user-select-auto">Defoult değeridir. Manuel seçilir metinler.</p>
+                <p class="user-select-none">Kullanıcı tıkladığında metinleri seçemez.</p>
+            <!-- Pointer event tıklanabilirliği sağlar. Tabindex ile linke ulaşılması engellenir. Aria-disabled ekran okuyucuların linkin üzerine gittiğinde linkin tıklanamaz olduğu mesajını verir. -->
+                <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">Bu link</a> tıklanamaz.</p>
+                <p><a href="#" class="pe-auto">Bu link</a> tıklanabilir. Defoult değeridir.</p>
+            <!-- Shadow gölge oluşturmak için kullanılır. -->
+                <div class="shadow-none p-3 mb-5 bg-light rounded">Shadow-none versiyon halidir.</div>
+                <div class="shadow-smp-3 mb-5 bg-light rounded">Shadow-sm versiyon halidir.</div>
+                <div class="shadow p-3 mb-5 bg-light rounded">Shadow versiyon halidir.</div>
+                <div class="shadow-lg p-3 mb-5 bg-light rounded">Shadow-lg versiyon halidir.</div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- Overflow metin içeriği için kaydırma çubuğu oluşturur. -->
+        <div class="row">
+            <div class="col-md-3 bg-danger overflow-auto" style="height: 6rem;">Sağda kaydırma çubuğu oluşturur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            <div class="col-md-3 bg-warning overflow-hidden" style="height: 6rem;">Kutudan artan yazı görünmez. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            <div class="col-md-3 bg-info overflow-visible" style="height: 6rem;">Defoult değerdir. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            <div class="col-md-3 bg-success overflow-scroll" style="height: 6rem;">Sağdan ve alttan kaydırma çubuğu oluşturur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <!-- Visible içeriğin görünmesini sağlar. İnvisible ise içeriğin kapladığı kısımda mevcut olup içerik görünmez. -->
+            <div class="col-md-12 bg-danger visible">Bu Görünür Bir İçeriktir.
+            </div>
+            <div class="col-md-12 bg-dark invisible">Bu Görünmez Bir İçeriktir. İçerik Görünmemesine Rağmen İçeriğin Olduğu Kısım Kullanılıyormuş Gibi Doludur. D-none dan farkı budur.
+            </div>
+            <div class="col-md-12 bg-danger visible">Bu Görünür Bir İçeriktir.
+            </div>
+            <p></p>
+            <br>
+        <!-- Visial-hidden ekran okuyucu hariç kullanıcıların göremediği kısımdır -->
+            <div class="col-md-3 bg-dark text-warning p-3">
+                <span class="visually-hidden">Ekran okuyucu hariç kimse okuyamaz.</span> Görünür İçerik
+            </div>
+            <br>
+            <p></p>
+            <br>
+        <!-- Genişlik width classları. Max width-100 ile tüm alan kullanılabileceği belirtilir ama width tanımlanırsa, tanımlanan width genişliği kadar yer kullanılır. Aynı durum height içinde geçerlidir. -->
+            <div class="col-12 bg-dark text-white text-center py-3">
+                <div class="w-25 bg-warning p-2 mb-3">W-25</div>
+                <div class="w-50 bg-warning p-2 mb-3">W-50</div>
+                <div class="w-75 bg-warning p-2 mb-3">W-75</div>
+                <div class="w-100 bg-warning p-2 mb-3">W-100</div>
+                <div class="w-auto bg-warning p-2 mb-3">W-auto</div>
+                <div class="mw-100 bg-warning p-2 mb-3" style="width: 100px;">Mw-100</div>
+            </div>
+            <br>
+            <p></p>
+            <br>
+        <!-- Viewport içeriği tüm cihazlara uyumlu hale getirir. -->
+            <div class="vw-100 bg-dark text-white p-3">Vw-100</div>
+            <div class="min-vw-100 bg-dark text-white p-3">Min-Vw-100</div>
+            <!-- <div class="vw-100 bg-dark text-white p-3">Vh-100</div>
+            <div class="min-vw-100 bg-dark text-white p-3">Min-Vh-100</div> -->
+            <br>
+            <p></p>
+            <br>
+        <!-- Dikey Hizalama -->
+            <div class="col-12">
+            <span class="align-baseline">Align-baseline</span>
+            <span class="align-top">Align-top</span>
+            <span class="align-middle">Align-middle</span>
+            <span class="align-bottom">Align-bottom</span>
+            <span class="align-text-top">Align-text-top</span>
+            <span class="align-text-bottom">Align-text-bottom</span>
+            <table style="height:180px;">
+                <tbody>
+                    <tr>
+                        <td class="align-top">Top</td>
+                        <td class="align-middle">Middle</td>
+                        <td class="align-bottom">Bottom</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <p></p>
+            <br>
+        <!-- Linkin renklendirilmesi -->
+            <a href="#" class="link-primary">Primary</a>
+            <br>
+        <!-- Text-truncate metinin belirliği bir alana kadar görünmesini sonrasının ise "..." ile gösterilmesini sağlar. -->
+            <div class="col-3 text-truncate">Deneme yapıyorum metinin hangi kısımı kesilecek diye</div><br>
+            <div class="vr"></div>
+            <span class="text-truncate d-inline-block" style="max-width: 170px;">Deneme yapıyorum metinin hangi kısımı kesilecek diye</span>
+            <!-- Vertical Role "vr" metinler arası dikey çubuk bırakmaya yarar. Yanyana iki metin yazmada kullanılır. -->
+            <br>
+            <p></p>
+            <br>
+        <!-- Ratio videoları duyarlı hale getirir. -->
+            <div class="col-lg-6">
+                <div class="ratio ratio-1x1 mb-4"><iframe src="https://www.youtube.com/embed/_vT7xQegCnc?list=PLY20HpFruiK13LB2jTkET4DkJP9eD2HZf" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="ratio ratio-4x3 mb-4"><iframe src="https://www.youtube.com/embed/_vT7xQegCnc?list=PLY20HpFruiK13LB2jTkET4DkJP9eD2HZf" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="ratio ratio-16x9 mb-4"><iframe src="https://www.youtube.com/embed/_vT7xQegCnc?list=PLY20HpFruiK13LB2jTkET4DkJP9eD2HZf" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="ratio ratio-21x9 mb-4"><iframe src="https://www.youtube.com/embed/_vT7xQegCnc?list=PLY20HpFruiK13LB2jTkET4DkJP9eD2HZf" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="CSS/dikeyhizalama.css" rel="stylesheet">
+</head>
+<body>
+    <p>Align-content kutu içeriklerini dikey hizamalaya yarar.
+        start, center, end, around, between, stretch(kutuların içeriğini en alta kadar eşit sıralar).<br>
+        Align-items tek sıra esnek ögeleri sıralamaya yarar.
+        start, center, end, baseline(içerikleri alt kısmına göre hizalar ve display ile kullanılır.)<br>
+        Align-self içerik bazında düzenlemek istenilen kutucuğa eklenerek içerik konumu belirtilir.
+        start, center, end, baseline, stretch.
+    </p>
+    <div class="container mt-4">
+        <div class="d-flex flex-wrap align-content-start align-content-md-center align-content-lg-end align-content-xl-around align-content-xxl-stretch bg-success mb-4 myHeight">
+            <div class="p-2 border border2 border-dark">Flex içerik 1</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 2</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 3</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 4</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 5</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 6</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 7</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 8</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 9</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 10</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 11</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 12</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 13</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 14</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 15</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 16</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 17</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 18</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 19</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 20</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 21</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 22</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 23</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 24</div>
+        </div>
+        <div class="d-flex align-items-baseline bg-success mb-4 myHeight1">
+            <div class="p-2 border border2 border-dark">Flex içerik 1</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 2</div>
+            <div class="p-2 border border2 border-dark display-4">Flex içerik 3</div>
+            <div class="p-2 border border2 border-dark display-5">Flex içerik 4</div>
+        </div>
+        <div class="d-flex bg-success mb-4 myHeight1">
+            <div class="p-2 border border2 border-dark">Flex içerik 1</div>
+            <div class="p-2 border border2 border-dark align-self-center">Flex içerik 2</div>
+            <div class="p-2 border border2 border-dark">Flex içerik 3</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

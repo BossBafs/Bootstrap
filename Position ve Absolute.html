@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/dikeyhizalama.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container bg-secondary my-5 mh-100" style="height: 600px;">
+        <div class="row">
+            <div class="col-12 py-4 d-flex">
+                <!-- Position-relative kutuların konumlarını değiştirmeye yarar. Ama kutular eski konumlarındaymış gibi eski konumları boş kalır. -->
+                <div class="Box me-4 border border-5 border-dark">Box 1</div>
+                <div class="Box me-4 border border-5 border-white Box2">Box 2</div>
+                <div class="Box border border-5 border-dark">Box 3</div>
+            </div>
+            <div class="col-12 py-4 d-flex">
+                <!-- Position-absolute kutuların özgürce hareket etmesine yarar. Konumu değiştirilen kutunun eski konumuna varsa bir sonraki kutu geçer. -->
+                <div class="Box me-4 border border-5 border-warning">Box 1</div>
+                <div class="Box border border-5 border-success Box3">Box 2</div>
+                <div class="Box border border-5 border-warning">Box 3</div>
+            </div>
+            <div class="col-12 py-4 d-flex" style="position-relative;">
+                <!-- Position-absolute içerisinde position-relative kullanılırsa yalnızca sınırlandırılan alan içerisinde özgür olmasına yarar. -->                
+                <div class="Box me-4 border border-5 border-success">Kutu 1</div>
+                <div class="Box border border-5 border-danger Box4 rounded-circle"><img src="RESİMLER/onay.png" class="img-fluid rounded-circle"></div>
+                <div class="Box border border-5 border-success">Kutu 3</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container bg-info my-5 mh-100 position-relative" style="height: 600px;">
+        <div class="row">
+            <div class="col-12 py-4 d-flex">
+                <!-- Translate middle kutuların ağırlık merkezlerine göre hizalar. -->
+                <div class="Box me-4 border border-5 border-dark top-0 start-0 translate-middle-y">Box 1</div>
+                <div class="Box me-4 border border-5 border-white position-absolute top-50 start-50 translate-middle">Box 2</div>
+                <div class="Box border border-5 border-dark position-absolute top-100 end-0 translate-middle-x">Box 3</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container bg-secondary my-5">
+    <div class="row">
+        <div class="col-12">
+            <!-- Visually-hidden ekran okuyucular için eklenir. -->
+            <button type="button" class="btn btn-dark position-relative me-5">
+                E-posta<span class="position-absolute top-0 start-100 badge rounded-pill bg-danger translate-middle">+29<span class="visually-hidden">Okunmamış Mesajlar</span></span>
+            </button>
+            <button type="button" class="btn btn-dark position-relative">
+                Yorumlar<span class="position-absolute top-0 start-100 badge rounded-circle bg-danger translate-middle border border-light p-2"><span class="visually-hidden">Okunmamış Mesajlar</span></span>
+            </button>
+        </div>
+    </div>
+</div>
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

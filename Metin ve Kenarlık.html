@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap iconları için uzantı -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-2 p-3">
+        <!-- lead komutu normal paragraf görünümü dışında farklı bir görünüm katar -->
+        <p class="lead">Ne şık bir paragraf.</p>
+        <p>Ne şık bir paragraf</p>
+        <!-- text metin hizalama için kullanılır -->
+        <p class="text-start">Sola hizalanmış</p>
+        <p class="text-center">Merkeze hizalanmış</p>
+        <p class="text-end">Sağa hizalanmış</p>
+        <!-- text-nowrap içeriği ekranın konumuna göre kendini konumlandırıyor -->
+        <p class="text-nowrap bg-secondary" style="width: 10rem;">Duyarlılığımı kim aldı? Duyarlılığı wrap ile kazandırırız ama varsayılan olarak wrap tanımlıdır.</p>
+        <!-- text-break tek ve uzun bir formda olan metini/kelimeyi ekranın konumuna göre duyarlı bir şekilde sayfanın aşağısına iter -->
+        <p>DuyarlılığımıkimelimdenaldıDuyarlılığımıkimelimdenaldıDuyarlılığımıkimelimdenaldı</p>
+        <p class="text-break"> DuyarlılığımıkimelimdenaldıDuyarlılığımıkimelimdenaldıDuyarlılığımıkimelimdenaldı</p>
+        <!-- text-decoration özellikleri -->
+        <p>Text-decoration özellikleri de güzelmiş</p>
+        <p class="text-decoration-underline">Text-decoration özellikleri de güzelmiş</p>
+        <p class="text-decoration-line-through">Text-decoration özellikleri de güzelmiş</p>
+        <a href="#" class="text-decoration-none">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Profile</a>
+        <a href="#" class="text-decoration-none">Contact</a>
+        <!-- Metin harflerini hepsini küçük/büyük/her kelimenin ilk harfi büyük olacak şekilde ayırır -->
+        <p class="text-lowercase">Tüm Harfleri Küçük Yapar.</p>
+        <p class="text-uppercase">Tüm Harfleri Büyük Yapar.</p>
+        <p class="text-capitalize">Her kelimenin ilk harfini büyük yapar.</p>
+        <!-- font-size-1/6 metinlerin boyutunu ayarlamaya yarar. -->
+        <p class="fs-1">Font-size 1</p>
+        <p class="fs-6">Font-size 6</p>
+        <!-- font-weight komutları metin kalınlığı ve italic'i ayarlamaya yarar. -->
+        <p class="fw-bold">Font-bold</p>
+        <p class="fw-bolder">Font-bolder</p>
+        <p class="fw-normal">Font-normal</p>
+        <p class="fw-light">Font-light(ince)</p>
+        <p class="fw-lighter">Font-lighter(daha ince)</p>
+        <p class="fst-italic">Font-italic</p>
+        <p class="fst-normal">Font-normal</p>
+        <!-- line-height satır aralıklarını belirlemede kullanılır. -->
+        <p>Normal. Satır aralıklarının belirlenmesinde kullanılır. Bunlar lh-1, lh-sm, lh-base ve lh-lg'dır. Satır aralıklarının daha iyi anlaşılabilmesi için yazıyı daha da uzatacağım.</p>
+        <p class="lh-1">Lh-1. Satır aralıklarının belirlenmesinde kullanılır. Bunlar lh-1, lh-sm, lh-base ve lh-lg'dır. Satır aralıklarının daha iyi anlaşılabilmesi için yazıyı daha da uzatacağım.</p>
+        <p class="lh-sm">Lh-sm. Satır aralıklarının belirlenmesinde kullanılır. Bunlar lh-1, lh-sm, lh-base ve lh-lg'dır. Satır aralıklarının daha iyi anlaşılabilmesi için yazıyı daha da uzatacağım.</p>
+        <p class="lh-base">Lh-base. Satır aralıklarının belirlenmesinde kullanılır. Bunlar lh-1, lh-sm, lh-base ve lh-lg'dır. Satır aralıklarının daha iyi anlaşılabilmesi için yazıyı daha da uzatacağım.</p>
+        <p class="lh-lg">Lh-lg. Satır aralıklarının belirlenmesinde kullanılır. Bunlar lh-1, lh-sm, lh-base ve lh-lg'dır. Satır aralıklarının daha iyi anlaşılabilmesi için yazıyı daha da uzatacağım.</p>
+        <!-- font-monospace metin fontunu değiştirir. -->
+        <p>Metin fontu normal olan.</p>
+        <p class="font-monospace">Metin fontu space olan.</p>
+        <!-- text-reset linkin(iç içerik/child/çocuk) rengini parent/ebeveynin rengi yapmak için kullanılır. -->
+        <p class="text-danger">Bu renk <a href="#" class="text-reset">Reset Linke</a> de uygulanacak</p>
+        <p class="text-danger">Bu renk <a href="#">Reset Linke</a> de uygulanacak</p>
+        <!-- list-unstyled liste imini göstermez. -->
+        <ul>
+            <li>Node JS</li>
+            <li>PHP</li>
+            <li>Front-end
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRİPT</li>
+                </ul>
+            </li>
+            <li>Asp.net</li>
+        </ul>
+        <ul class="list-unstyled">
+            <li>Node JS</li>
+            <li>PHP</li>
+            <li>Front-end
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRİPT</li>
+                </ul>
+            </li>
+            <li>Asp.net</li>
+        </ul>
+        <!-- list-inline parent a /list-inline-item child a yazarak listeleri yanyana hizalamak için kullanılır. -->
+        <ul class="list-inline">
+            <li class="list-inline-item">Home</li>
+            <li class="list-inline-item">About Us</li>
+            <li class="list-inline-item">Profile</li>
+            <li class="list-inline-item">Contact</li>
+        </ul>
+    </div>
+    <div class="container my-2 p-3 bg-dark">
+        <div class="p-3 mb-2 bg-primary bg-gradient">Primary</div>
+        <div class="p-3 mb-2 bg-secondary bg-gradient">Secondary</div>
+        <div class="p-3 mb-2 bg-success">Success</div>
+        <div class="p-3 mb-2 bg-success bg-opacity-75">Success Text-opacity-75</div>
+        <div class="p-3 mb-2 bg-success bg-opacity-50">Success Text-opacity-50</div>
+        <div class="p-3 mb-2 bg-success bg-opacity-25">Success Text-opacity-25</div>
+        <div class="p-3 mb-2 bg-danger">Danger</div>
+        <div class="p-3 mb-2 bg-warning">Warning</div>
+        <div class="p-3 mb-2 bg-info">İnfo</div>
+        <div class="p-3 mb-2 bg-light">Light</div>
+        <div class="p-3 mb-2 bg-body">Body</div>
+        <div class="p-3 mb-2 bg-white">White</div>
+        <div class="p-3 mb-2 bg-transparent text-white">Transparent</div>
+    </div>
+    <div class="container my-2 p-3">
+        <div class="p-3 mb-2 text-primary">Primary</div>
+        <div class="p-3 mb-2 text-secondary">Secondary</div>
+        <div class="p-3 mb-2 text-success">Success</div>
+        <div class="p-3 mb-2 text-success text-opacity-75">Success Text-opacity-75</div>
+        <div class="p-3 mb-2 text-success text-opacity-50">Success Text-opacity-50</div>
+        <div class="p-3 mb-2 text-success text-opacity-25">Success Text-opacity-25</div>
+        <div class="p-3 mb-2 text-danger">Danger</div>
+        <div class="p-3 mb-2 text-warning">Warning</div>
+        <div class="p-3 mb-2 text-info">İnfo</div>
+        <div class="p-3 mb-2 text-muted">Muted</div>
+        <div class="p-3 mb-2 text-light bg-dark">Light</div>
+        <div class="p-3 mb-2 text-body">Body</div>
+        <div class="p-3 mb-2 text-white bg-dark">White</div>
+    </div>
+    <!-- Bootstrap Kenarlık Özellikleri -->
+    <p>Rounded-0/6 kenarlıkları oval yapmaya yarar. 
+        Rounded-pill ise hap şeklini verir ama bunun için width ve height değerleri birbirinden farklı olmalıdır.
+        1 rem = 16 px eşittir.</p>
+    <div class="container my-2 p-3 border border-3">
+        <div class="class border-top border-primary p-3 mb-3 bg-light" style="width: 6.25rem; height: 6.25rem;"></div>
+        <div class="class border-bottom border-secondary p-3 mb-3 bg-light" style="width: 6.25rem; height: 6.25rem;"></div>
+        <div class="class border border-start-0 border-warning p-3 mb-3 bg-light" style="width: 6.25rem; height: 6.25rem;"></div>
+        <div class="class border border-end-0 border-danger p-3 mb-3 bg-light" style="width: 6.25rem; height: 6.25rem;"></div>
+        <div class="class border border-dark rounded p-3 mb-3 bg-light" style="width: 6.25rem; height: 6.25rem;"></div>
+        <div class="class border border-dark rounded-pill p-3 mb-3 bg-secondary" style="width: 10rem; height: 6.25rem;"></div>
+        <img src="RESİMLER/istockphoto-827592510-1024x1024.jpg" class="img-fluid rounded-circle" style="width: 15rem; height: 15rem;">
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <!-- Kapatılabilir bir Alert oluşturur. Data-bs-dismiss bootstrap içerik kapatmayı etkinleştirir. -->
+                <div class="alert alert-primary alert-dismissible" role="alert">
+                    <strong>Primary Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, libero.
+                    <a href="#" class="Alert Link">Ben Alert Link</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+                </div>
+                <!-- Data-bs-dismiss yerine Javascript ile yapılmak istenirse alttaki gibi yapılır. -->
+                <div class="alert alert-primary alert-dismissible" role="alert" id="MyAlert">
+                    <strong>Javascript Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, libero.
+                    <a href="#" class="Alert Link">Ben Alert Link</a>
+                    <button type="button" class="btn-close" id="alertBtn" aria-label="Kapat"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script>
+        const alertBtn=document.querySelector("#alertBtn");
+        const alertdiv=document.querySelector("#MyAlert");
+        alertBtn.addEventListener("click", function(){
+            const MyAlert=new bootstrap.Alert(alertdiv);
+            MyAlert.close();
+        });
+        alertdiv.addEventListener("close.bs.alert",function(){
+            alert("Kapatılacak");
+        });
+    </script>    
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label for="myEmail" class="form-label">E-posta Adresiniz</label>
+                        <input type="email" class="form-control" id="myEmail" aria-describedby="emailHelper" 
+                        value="email@example.com" readonly>
+                        <div class="form-text" id="emailHelper">E-posta adresiniz asla paylaşılmayacaktır.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="myPassword" class="form-label">Şifreniz</label>
+                        <input type="password" class="form-control form-control-sm" id="myPassword" aria-describedby="passwordHelper" placeholder="Şifrenizi Giriniz" disabled>
+                        <div id="passwordHelper1" class="form-text">Şifreniz 8-20 karakter uzunluğunda olmalıdır. Büyük harf, küçük harf ve rakamlar içermelidir.</div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGroup" class="form-label col-sm-2">Grup :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="myGroup" aria-describedby="basic" placeholder="E-posta Adresinizi Giriniz" aria-label="E-posta Adresinizi Giriniz">
+                                <span id="basic" class="input-group-text">@gmail.com</span>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGroup" class="form-label col-sm-2">Grup 1 :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-sm">
+                                <span id="basic1" class="input-group-text">https://www.youtube.com/watch/</span>   
+                                <input type="text" class="form-control" id="myGroup1" aria-describedby="basic1" placeholder="Özel URL Giriniz" aria-label="Özel URL Giriniz">                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGroup2 myGroup3" class="form-label col-sm-2">Grup 2/3 :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control" id="myGroup2" aria-describedby="basic2" placeholder="E-posta" aria-label="E-posta">  
+                                <span id="basic2" class="input-group-text">@</span>   
+                                <input type="text" class="form-control" id="myGroup3" aria-describedby="basic2" placeholder="E-posta Uzantısı" aria-label="E-posta Uzantısı">                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGroup4" class="form-label col-sm-2">Grup 4 :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <span id="basic3" class="input-group-text">Burası Textarea</span>   
+                                <textarea class="form-control" id="myGroup4" aria-describedby="basic3" aria-label="textarea" rows="4">
+                                </textarea>                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGroup5" class="form-label col-sm-2">Grup 5 :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <input type="checkbox" class="form-check-input" aria-label="text inputun checkbox'ı"></input>
+                                </div> 
+                                <input type="text" class="form-control" id="myGroup5" aria-label="checkbox'a ait text inputu">
+                                </input>                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGroup6" class="form-label col-sm-2">Grup 6 :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <input type="radio" class="form-check-input" aria-label="text inputun radio'su"></input>
+                                </div> 
+                                <input type="text" class="form-control" id="myGroup6" aria-label="radio'a ait text inputu">
+                                </input>                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGroup7 myGroup8" class="form-label col-sm-2">Grup 7/8 :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <span id="basic4" class="input-group-text">Ad ve Soyad</span>   
+                                <input type="text" class="form-control" id="myGroup7" aria-describedby="basic4" aria-label="Adınız" placeholder="Adınız">
+                                </input> 
+                                <input type="text" class="form-control" id="myGroup8" aria-describedby="basic4" aria-label="Soyadınız" placeholder="Soyadınız">
+                                </input>                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="remember" aria-describedby="emailHelper">
+                        <label class="form-check-label" for="remember">Beni Hatırla</label>
+                    </div>
+                    <button class="btn btn-success" type="button">Giriş Yap</button>
+                </form>
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+
+<div class="row my-5">
+            <div class="col">
+                <div class="col-md-12 bg-danger visible text-center">Row Bitiş</div>                
+            </div>  <!-- col end -->
+</div>  <!-- row end -->
+ 
+        <div class="row align-items-center my-5 g-3">
+            <div class="col-auto">
+                <label class="col-form-label" for="myPassword1">Şifreniz</label>
+            </div>
+            <div class="col-auto">
+                <input type="password" class="form-control form-control-lg" id="myPassword1" aria-describedby="passwordHelper1">
+            </div>
+            <div class="col-auto">
+                <div id="passwordHelper1" class="form-text">Şifreniz 8-20 karakter uzunluğunda olmalıdır. Büyük harf, küçük harf ve rakamlar içermelidir.</div>
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+
+<div class="row my-5">
+            <div class="col">
+                <div class="col-md-12 bg-danger visible text-center">Row Bitiş</div>                
+            </div>  <!-- col end -->
+</div>  <!-- row end -->
+ 
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="mb-3 row">
+                        <label for="myRange" class="form-label col-sm-2 ">Aralık Seç :</label>
+                        <div class="col-sm-10 ">
+                            <input type="range" class="form-range" id="myRange" min="0" max="10" step="1">                         
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myEmail" class="form-label col-sm-2 ">E-posta :</label>
+                        <div class="col-sm-10 ">
+                            <input type="email" class="form-control" id="myEmail" aria-describedby="emailHelper">
+                            <div class="form-text" id="emailHelper">E-posta adresiniz asla paylaşılmayacaktır.</div>                            
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myPassword" class="form-label col-sm-2 ">Şifre :</label>
+                        <div class="col-sm-10 ">
+                            <input type="password" class="form-control" id="myPassword" aria-describedby="passwordHelper" placeholder="Şifrenizi Giriniz">
+                            <div id="passwordHelper1" class="form-text">Şifreniz 8-20 karakter uzunluğunda olmalıdır. Büyük harf, küçük harf ve rakamlar içermelidir.</div>                            
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myArea" class="form-label col-sm-2 ">Açıklama :</label>                       
+                        <div class="col-sm-10 ">
+                            <textarea class="form-control" id="myArea" rows="4"></textarea>                            
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myFile" class="form-label col-sm-2 ">Dosya Ekle :</label>                       
+                        <div class="col-sm-10 ">
+                            <input class="form-control" id="myFile" type="file" multiple></input>                            
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myColor" class="form-label col-sm-2 ">Renk Seç :</label>                       
+                        <div class="col-sm-10 ">
+                            <input class="form-control form-control-color" id="myColor" type="color" multiple title="renk seç"></input>                            
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myGender" class="form-label col-sm-2 ">Cinsiyet Seç :</label>                       
+                        <div class="col-sm-10 ">
+                            <select class="form-control" id="mygender" aria-label="açılır select kutusu">
+                                <option selected>Cinsiyet Seç</option>
+                                <option value="female">Kadın</option>
+                                <option value="male">Erkek</option>
+                            </select>                            
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="myDatalist" class="form-label col-sm-2 ">Şehir Seç :</label>                       
+                        <div class="col-sm-10 ">
+                            <input class="form-control" id="myDatalist" list="dataOptions" placeholder="Veri Ara...">
+                                <datalist id="dataOptions">
+                                    <option value="Van"></option>
+                                    <option value="İstanbul"></option>
+                                    <option value="Ankara"></option>
+                                    <option value="İzmir"></option>
+                                    <option value="Aydın"></option>
+                                    <option value="Çanakkale"></option>
+                                </datalist>
+                            </input>                            
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check row">
+                        <div class="offset-sm-2 offset-xl-2">
+                            <input type="checkbox" class="form-check-input" id="remember" aria-describedby="emailHelper" checked>
+                            <label class="form-check-label" for="remember">Beni Hatırla</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="offset-sm-2">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="myRadio" name="yesorno">
+                                <label class="form-check-label" for="myRadio">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="myRadio1" name="yesorno">
+                                <label class="form-check-label" for="myRadio1">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="offset-sm-2 offset-xl-2">
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" id="mySwitch" role="switch">
+                                <label class="form-check-label" for="mySwitch">Siteyi Aç veya Kapat</label>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-sm-2 offset-xl-2">
+                        <button class="btn btn-success" type="button">Giriş Yap</button>
+                    </div>
+                </form>
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+        
+<div class="row my-5">
+            <div class="col">
+                <div class="col-md-12 bg-danger visible text-center">Row Bitiş</div>                
+            </div>  <!-- col end -->
+</div>  <!-- row end -->
+ 
+        <div class="row mt-5">
+            <div class="col">
+                <form>
+                    <div class="row g-3 mb-3">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="email" class="form-control is-invalid" id="Email100" placeholder="E-posta Giriniz">
+                                <label for="Email100">E-posta Adresiniz</label>
+                            </div>                            
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="password" class="form-control is-valid" id="myPassword100" placeholder="Şifre Giriniz">
+                                <label for="myPassword100">Şifreniz</label>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="myComment" placeholder="Yorumunuzu Yazınız" style="height: 150px;"></textarea>
+                        <label for="myComment">Yorumunuz</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="mySelect" aria-label="Şehir Seç">
+                            <option selected>Şehir Seçiniz</option>
+                            <option value="1">Balıkesir</option>
+                            <option value="2">Ağrı</option>
+                            <option value="3">Muğla</option>
+                            <option value="4">Mardin</option>
+                        </select>
+                        <label for="mySelect">Şehriniz</label>
+                    </div>
+                </form>
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+        
+<div class="row my-5">
+            <div class="col">
+                <div class="col-md-12 bg-danger visible text-center">Row Bitiş</div>                
+            </div>  <!-- col end -->
+</div>  <!-- row end -->
+ 
+    </div>  <!-- container end -->
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+</body>
+</html>

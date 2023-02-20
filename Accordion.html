@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <!-- Yan kenarlıkların kaldırılması istenirse accordion-flush yazılır. -->
+                <div class="accordion accordion-flush" id="myAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <!-- İlk içeriğin görünmesi istenmiyor ise Button'a collapsed eklenir ve div de show kaldırılır. -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#first" aria-expanded="true" aria-controls="first">Bootstrap Eğitimi</button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="first" aria-labelledby="headingOne" data-bs-parent="#myAccordion">
+                            <!-- Herhangi bir içerik açıldığında diğer içeriklerin kapanması istenmiyorsa data-bs-parent kaldırılır. -->
+                            <div class="accordion-body">
+                                <strong>Bootstrap Eğitimi</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur rerum cum numquam officia beatae. Molestias ab officiis dolorum accusamus tenetur, alias mollitia eligendi magni aut eos possimus commodi accusantium!
+                                Veritatis reprehenderit cupiditate perferendis consectetur debitis, totam similique fugit fuga, soluta sint sapiente possimus eaque, natus qui modi. Commodi soluta illum hic vero asperiores! Totam enim est cupiditate ducimus quam officia beatae. Molestias ab officiis dolorum accusamus tenetur, alias mollitia eligendi magni aut eos possimus commodi accusantium!
+                                Veritatis reprehenderit cupiditate perferendis consectetur debitis, totam similique fugit fuga, <cite>soluta sint sapiente possimus eaque, natus qui modi. </cite> Commodi soluta illum hic vero asperiores! Totam enim est cupiditate ducimus
+                            </div>  <!-- Accordion-body end -->
+                        </div>
+                    </div>  <!-- Accordion-item-first end -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#second" aria-expanded="false" aria-controls="second">Python Eğitimi</button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="second" aria-labelledby="headingTwd" data-bs-parent="#myAccordion">
+                            <div class="accordion-body">
+                                <strong>Python Eğitimi</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur rerum cum numquam officia beatae. Molestias ab officiis dolorum accusamus tenetur, alias mollitia eligendi magni aut eos possimus commodi accusantium!
+                                Veritatis reprehenderit cupiditate perferendis consectetur debitis, totam similique fugit fuga, soluta sint sapiente possimus eaque, natus qui modi. Commodi soluta illum hic vero asperiores! Totam enim est cupiditate ducimus quam officia beatae. Molestias ab officiis dolorum accusamus tenetur, alias mollitia eligendi magni aut eos possimus commodi accusantium!
+                                Veritatis reprehenderit cupiditate perferendis consectetur debitis, totam similique fugit fuga, <cite>soluta sint sapiente possimus eaque, natus qui modi. </cite> Commodi soluta illum hic vero asperiores! Totam enim est cupiditate ducimus
+                            </div>  <!-- Accordion-body end -->
+                        </div>
+                    </div>  <!-- Accordion-item-second end -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#third" aria-expanded="false" aria-controls="third">JavaScript Eğitimi</button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="third" aria-labelledby="headingThree" data-bs-parent="#myAccordion">
+                            <div class="accordion-body">
+                                <strong>JavaScript Eğitimi</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur rerum cum numquam officia beatae. Molestias ab officiis dolorum accusamus tenetur, alias mollitia eligendi magni aut eos possimus commodi accusantium!
+                                <img src="RESİMLER/Comics.jpg" alt="" class="img-fluid">
+                            </div>  <!-- Accordion-body end -->
+                        </div>
+                    </div>  <!-- Accordion-item-third end -->
+                </div>  <!-- Accordion end -->
+
+            </div>  <!-- col end -->
+        </div>  <!-- row end -->
+    </div>  <!-- container end -->
+    <script src="JS/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
